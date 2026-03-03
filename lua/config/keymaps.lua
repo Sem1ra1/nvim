@@ -13,3 +13,4 @@
 -- vim.keymap.set("n", "<M-l>", function() harpoon:list():select(4) end)
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { noremap = true, silent = true })
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { noremap = true, silent = true })
+vim.keymap.set("i", "jj", "<Esc>", { silent = true, noremap = true })
