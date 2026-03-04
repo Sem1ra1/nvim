@@ -16,3 +16,5 @@ require("config.lazy")
 vim.cmd([[
 autocmd VimEnter * cd ~
 ]])
+
+
