@@ -59,7 +59,15 @@ return {
 
 		-- Override specific highlights
 		on_highlights = function(highlights, colors)
-			highlights.Comment = { fg = colors.fg_gutter, italic = true }
+			highlights.Comment = { italic = true }
+      highlights.Constant = { fg = colors.red }
+      highlights.Title = { fg = colors.foreground } -- html text inside 'title' tag
+			highlights.cssTagName = { fg = colors.magenta }
+			highlights.cssCascadeProp = { fg = colors.red }
+      highlights["@punctuation.special"] = { fg = colors.yellow } -- curly brackets for 'string interpolation'
+      highlights["@punctuation.bracket"] = { fg = colors.yellow } -- curly brackets for functions
+      highlights["@constant.html"] = { fg = colors.magenta, italic = true  } -- root 'DOCTYPE' tag
+      highlights["@keyword.return"] = { fg = colors.magenta, italic = true } -- root 'DOCTYPE' tag
 		end,
 	}),
 }
