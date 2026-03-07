@@ -20,7 +20,7 @@ return {
         virtual_symbol_position = "eow",
 
 				-- "●"|"♫"|"✦"|"▁▂▃▄▅▆▇█ █▇▆▅▄▃▂▁"|"◀■▶"|"●"
-				virtual_symbol = "●",
+				virtual_symbol = "●~●~●",
 				virtual_symbol_prefix = " ",
 				virtual_symbol_suffix = "",
 
