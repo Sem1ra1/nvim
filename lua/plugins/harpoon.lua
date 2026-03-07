@@ -26,17 +26,35 @@ return {
 				end,
 				desc = "Harpoon Quick Menu",
 			},
-		}
-
-		for i = 1, 9 do
-			table.insert(keys, {
-				"<leader>" .. i,
+			{
+				"<M-h>",
 				function()
-					require("harpoon"):list():select(i)
+					require("harpoon"):list():select(1)
 				end,
-				desc = "Harpoon to File " .. i,
-			})
-		end
+				desc = "Harpoon to file 1",
+			},
+			{
+				"<M-j>",
+				function()
+					require("harpoon"):list():select(2)
+				end,
+				desc = "Harpoon to file 2",
+			},
+			{
+				"<M-k>",
+				function()
+					require("harpoon"):list():select(3)
+				end,
+				desc = "Harpoon to file 3",
+			},
+			{
+				"<M-l>",
+				function()
+					require("harpoon"):list():select(4)
+				end,
+				desc = "Harpoon to file 4",
+			},
+		}
 		return keys
 	end,
 }
