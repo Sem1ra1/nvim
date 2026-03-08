@@ -13,4 +13,4 @@
 --   command = "silent! wall",
 --   nested = true,
 -- })
---
+vim.cmd("colorscheme vaporwave")
