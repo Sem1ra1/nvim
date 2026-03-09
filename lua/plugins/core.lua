@@ -68,6 +68,10 @@ return {
       highlights["@punctuation.bracket"] = { fg = colors.yellow } -- curly brackets for functions
       highlights["@constant.html"] = { fg = colors.magenta, italic = true  } -- root 'DOCTYPE' tag
       highlights["@keyword.return"] = { fg = colors.magenta, italic = true } -- root 'DOCTYPE' tag
+      highlights["@markup.link.label.html"] = { fg = colors.foreground } -- root 'DOCTYPE' tag
+      highlights["@string.css"] = { fg = colors.orange } -- root 'DOCTYPE' tag
+      highlights["@punctuation.bracket.css"] = { fg = colors.purple } -- root 'DOCTYPE' tag
+      highlights["@function.css"] = { fg = colors.orange } -- root 'DOCTYPE' tag
 		end,
 	}),
 }
