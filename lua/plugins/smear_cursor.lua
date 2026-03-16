@@ -1,5 +1,6 @@
 return {
 	"sphamba/smear-cursor.nvim",
+  enabled = true,
   opts = {
     -- Cursor animations speed
                                           -- Default  Range
