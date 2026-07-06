@@ -1,6 +1,6 @@
 return {
 	require("andromeda").setup({
-		transparent = true, -- Disable background color
+		transparent = false, -- Disable background color
 		terminal_colors = true, -- Configure terminal colors
 
 		styles = {
