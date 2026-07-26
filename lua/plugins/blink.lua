@@ -6,9 +6,11 @@ return {
 			completion = {
 				menu = {
 					border = "rounded",
+					auto_show = false,
 				},
 				ghost_text = {
-					enabled = false,
+					enabled = true,
+					show_with_menu = false,
 				},
 			},
 			sources = {

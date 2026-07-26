@@ -14,3 +14,6 @@
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { noremap = true, silent = true })
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { noremap = true, silent = true })
 vim.keymap.set("i", "jj", "<Esc>", { silent = true, noremap = true })
+vim.keymap.set('i', '<M-c>', function()
+  require('blink.cmp').show()
+end, { silent = true, desc = 'Show completion menu' })

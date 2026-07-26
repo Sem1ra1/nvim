@@ -144,6 +144,9 @@ return {
 						},
 					},
 				},
+        cspell_ls = {
+          enabled = false,
+        }
 			},
 			setup = {},
 		},
