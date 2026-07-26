@@ -13,6 +13,10 @@ return {
 					show_with_menu = false,
 				},
 			},
+			keymap = {
+				preset = "default",
+				-- ["<CR>"] = {},
+			},
 			sources = {
 				per_filetype = {
 					lua = { inherit_defaults = true, "lazydev" },
