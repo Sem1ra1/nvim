@@ -16,7 +16,7 @@ return {
 
 			keymap = {
 				-- "super-tab" | "default" | "enter"
-				preset = "enter",
+				preset = "default",
 				-- ["<CR>"] = {},
 			},
 			sources = {
