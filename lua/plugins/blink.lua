@@ -13,8 +13,10 @@ return {
 					show_with_menu = false,
 				},
 			},
+
 			keymap = {
-				preset = "default",
+				-- "super-tab" | "default" | "enter"
+				preset = "enter",
 				-- ["<CR>"] = {},
 			},
 			sources = {
