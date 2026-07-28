@@ -34,7 +34,7 @@ return {
 						name = "Snippets",
 						enabled = true,
 						module = "blink.cmp.sources.snippets",
-						score_offset = 0, -- show at a higher priority than lsp
+						score_offset = 20, -- show at a higher priority than lsp
 					},
 					lazydev = {
 						name = "LazyDev",
