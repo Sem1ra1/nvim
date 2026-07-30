@@ -20,9 +20,6 @@ return {
 				-- ["<CR>"] = {},
 			},
 			sources = {
-				per_filetype = {
-					lua = { inherit_defaults = true, "lazydev" },
-				},
 				providers = {
 					lsp = {
 						name = "LSP",
@@ -35,6 +32,10 @@ return {
 						enabled = true,
 						module = "blink.cmp.sources.snippets",
 						score_offset = 20, -- show at a higher priority than lsp
+						should_show_items = function(ctx)
+							return ctx.trigger.initial_kind ~= "trigger_character"
+						end,
+						min_keyword_length = 2,
 					},
 					lazydev = {
 						name = "LazyDev",

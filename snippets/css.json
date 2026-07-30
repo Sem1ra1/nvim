@@ -11,5 +11,10 @@
       "}"
     ],
     "description": "Insert font-face at import"
+  },
+  "Background color property": {
+    "prefix": "bgc",
+    "body": ["background-color: ${1:#fff};"],
+    "description": "user Background color"
   }
 }
