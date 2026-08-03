@@ -13,13 +13,16 @@
 -- vim.keymap.set("n", "<M-l>", function() harpoon:list():select(4) end)
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { noremap = true, silent = true })
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { noremap = true, silent = true })
-vim.keymap.set("i", "jj", "<Esc>", { silent = true, noremap = true })
 
 vim.keymap.set("i", "<C-n>", function()
 	require("blink.cmp").show()
 end, { silent = true, desc = "Show completion menu" })
 -- make a new line and go onto it
 vim.keymap.set("i", "<C-CR>", "<Esc>o")
-
+vim.keymap.set("x", "p", '"_dP', { noremap = true, silent = true })
+vim.keymap.set('n', 'j', 'jzz', { noremap = true })
+vim.keymap.set('n', 'k', 'kzz', { noremap = true })
+vim.keymap.set('n', '<C-u>', '<C-u>zz', { noremap = true })
+vim.keymap.set('n', '<C-d>', '<C-d>zz', { noremap = true })
 
 
