@@ -20,8 +20,6 @@ end, { silent = true, desc = "Show completion menu" })
 -- make a new line and go onto it
 vim.keymap.set("i", "<C-CR>", "<Esc>o")
 vim.keymap.set("x", "p", '"_dP', { noremap = true, silent = true })
-vim.keymap.set('n', 'j', 'jzz', { noremap = true })
-vim.keymap.set('n', 'k', 'kzz', { noremap = true })
 vim.keymap.set('n', '<C-u>', '<C-u>zz', { noremap = true })
 vim.keymap.set('n', '<C-d>', '<C-d>zz', { noremap = true })
 
