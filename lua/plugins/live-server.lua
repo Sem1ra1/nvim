@@ -11,7 +11,7 @@ return {
     },
     {
       "<leader>uq",
-      "<cml>LiveServerStop<cr>",
+      "<cmd>LiveServerStop<cr>",
       desc = "Stop Live Server",
     },
   },
